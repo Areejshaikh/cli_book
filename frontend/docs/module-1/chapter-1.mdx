@@ -1,0 +1,47 @@
+---
+sidebar_position: 1
+---
+
+# ROS 2 Nodes, Topics, and Services
+
+## Learning Objectives
+- Understand the fundamental concepts of ROS 2 architecture
+- Learn how to implement basic nodes
+- Explore communication patterns using topics and services
+
+## Introduction
+
+ROS 2 (Robot Operating System 2) provides a flexible framework for writing robot software. It's a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robot platforms.
+
+## Core Concepts
+
+### Nodes
+A node is a process that performs computation. ROS 2 applications are composed of multiple nodes that work together to accomplish complex tasks. Nodes are typically organized to keep the system modular and maintainable.
+
+### Topics and Publishers/Subscribers
+Topics enable asynchronous communication between nodes using a publish/subscribe model. A node publishes messages to a topic, and other nodes subscribe to that topic to receive the messages.
+
+### Services
+Services provide synchronous request/response communication between nodes. A client sends a request to a service, and the service returns a response.
+
+
+## Summary
+- Nodes are the basic execution units in ROS 2
+- Topics enable asynchronous communication via publish/subscribe
+- Services provide synchronous request/response communication
+
+## Quiz
+1. What is a ROS 2 node?
+   - a) A hardware component
+   - b) A software process
+   - c) A network protocol
+
+2. How do nodes communicate asynchronously in ROS 2?
+   - a) Through services
+   - b) Through topics
+   - c) Through parameters
+
+3. What type of communication does a service provide?
+   - a) Asynchronous
+   - b) Synchronous
+   - c) Both

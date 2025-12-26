@@ -1,0 +1,117 @@
+/* Mobile-specific styling for the Physical AI textbook */
+
+/* Optimize for various mobile screen sizes */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  /* Optimize navigation for mobile */
+  .navbar__item, .navbar__link {
+    font-size: 0.9rem;
+  }
+  
+  /* Adjust content for mobile */
+  .markdown h1 {
+    font-size: 1.8rem;
+  }
+  
+  .markdown h2 {
+    font-size: 1.5rem;
+  }
+  
+  .markdown h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Ensure images scale properly */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Optimize code blocks for mobile */
+  .prism-code {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  
+  /* Adjust sidebar for mobile */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .sidebar.show {
+    transform: translateX(0);
+  }
+}
+
+/* Additional optimizations for smaller screens */
+@media (max-width: 480px) {
+  .hero_banner {
+    padding: 1.5rem 1rem;
+  }
+  
+  .hero__title {
+    font-size: 1.6rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Make buttons more touch-friendly */
+  .button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Adjust text size for readability */
+  body {
+    font-size: 0.95rem;
+  }
+  
+  /* Optimize quiz elements for mobile */
+  .quiz-question {
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+  
+  .quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .quiz-option {
+    padding: 0.75rem;
+    margin: 0.25rem 0;
+  }
+}
+
+/* Performance optimizations for slower connections */
+@media (prefers-reduced-data: reduce) {
+  /* Reduce image quality requests */
+  img {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 200px;
+  }
+  
+  /* Simplify animations */
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

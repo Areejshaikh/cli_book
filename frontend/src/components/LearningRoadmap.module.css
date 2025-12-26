@@ -1,0 +1,49 @@
+/**
+ * CSS module for LearningRoadmap component
+ */
+
+.roadmapCard {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.roadmapCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.weekRange {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #252525;
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #252525;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .roadmapCard {
+    padding: 1rem;
+  }
+  
+  .weekRange {
+    font-size: 1.1rem;
+  }
+  
+  .title {
+    font-size: 0.9rem;
+  }
+}
