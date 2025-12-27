@@ -10,7 +10,7 @@ const HeroSection = () => {
         <p className="hero__subtitle">Build robots that understand the physical world</p>
         <p className="hero__description">Interactive textbook for Physical AI & Robotics</p>
         <div className="margin-top--lg">
-          <Button to="/intro" variant="primary" className="button--lg margin-right--md">
+          <Button to="/" variant="primary" className="button--lg margin-right--md">
             Get Started
           </Button>
           <Button to="/" variant="secondary" className="button--lg">
